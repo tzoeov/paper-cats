@@ -1,0 +1,35 @@
+@import '../../styles/variables.module.scss';
+
+.connectionError {
+  padding: 4px 8px;
+  background-color: red;
+  color: white;
+  font-weight: bold;
+  letter-spacing: 1px;
+  border-radius: 5px;
+  box-shadow: 0 0 40px 10px rgb(0 0 0 / 40%);
+  border: 2px solid rgba(0, 0, 0, .6);
+}
+
+.profile {
+  display: flex;
+  color: white;
+  align-items: center;
+
+  .profileAccount {
+    background-color: grey;
+    padding: 2px 8px;
+    width: 140px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 24px;
+    border-radius: 22px;
+  }
+
+  .logout {
+    margin-left: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+  }
+}

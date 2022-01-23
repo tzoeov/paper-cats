@@ -1,0 +1,49 @@
+@import '../../styles/variables.module.scss';
+
+.header {
+  background-color: $blue;
+}
+
+.innerHeader {
+  height: 73px;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 1320px;
+  padding: 12px;
+}
+
+.headerLogo {
+  color: white;
+}
+
+.headerNavigation {
+  background-color: $light-blue;
+}
+
+.innerHeaderNavigation {
+  max-width: 1320px;
+  margin: 0 auto;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  padding: 0 12px;
+
+  a {
+    color: white;
+
+    &:not(:first-child) {
+      margin-left: 10px;
+    }
+
+    &.active, &:hover {
+      text-decoration:underline;
+      text-underline-offset: 12px;
+      text-decoration-color: $yellow;
+      text-decoration-thickness: 3px;
+    }
+  }
+
+
+}
